@@ -1,4 +1,4 @@
-System Health Check API
+**System Health Check API**
 Overview
 
 This project implements a Python-based FastAPI application that evaluates the health of a system composed of multiple interdependent components arranged as a Directed Acyclic Graph (DAG).
