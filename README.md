@@ -135,30 +135,12 @@ Swagger URL:
 
 ---
 
-## Step 11: Docker Section
-
-Add:
-
-    ```markdown
-    ## Run Using Docker
+## Docker
 
 Build image:
 
-    ```bash
-    docker build -t system-health-check-api .
-
+docker build -t system-health-check-api .
 
 Run container:
 
-    docker run -p 8000:8000 system-health-check-api
-
----
-
-## Step 12: Commit Everything
-
-After saving README:
-
-```bash
-git add .
-git commit -m "Enhanced README with architecture, design decisions and observability"
-git push
+docker run -p 8000:8000 system-health-check-api
