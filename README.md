@@ -13,12 +13,12 @@ The application:
     Provides Swagger/OpenAPI documentation
 
 Technologies Used
-    Python 3.x
-    FastAPI
-    Asyncio
-    Pytest
-    Docker
-    Terraform
+    Python 3.x,
+    FastAPI,
+    Asyncio,
+    Pytest,
+    Docker,
+    Terraform,
     GitHub Actions
 
 Core Features
