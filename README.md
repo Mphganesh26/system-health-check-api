@@ -119,21 +119,23 @@ The solution was tested using a sample DAG containing 11 interconnected componen
 
 ## Run Locally
 
-Install dependencies:
+### Install Dependencies
 
-    ```bash
-    pip install fastapi uvicorn pytest pydantic
+```bash
+pip install fastapi uvicorn pytest pydantic
+```
 
-Run application:
+### Start the Application
 
-    uvicorn app.main:app --reload
+```bash
+uvicorn app.main:app --reload
+```
 
-Swagger URL:
+### Swagger Documentation
 
-    http://127.0.0.1:8000/docs
-
-
----
+```text
+http://127.0.0.1:8000/docs
+```
 
 ## Docker
 
