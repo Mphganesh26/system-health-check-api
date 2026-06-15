@@ -22,14 +22,15 @@ Technologies Used
     GitHub Actions
 
 Core Features
-    DAG construction from JSON input
-    Breadth First Search (BFS) traversal
-    Asynchronous component health evaluation
-    Health result aggregation
+    DAG construction from JSON input, 
+    Breadth First Search (BFS) traversal, 
+    Asynchronous component health evaluation, 
+    Health result aggregation, 
     FastAPI REST API
+
 Additional Features
-    Swagger/OpenAPI documentation
-    Structured logging
+    Swagger/OpenAPI documentation,
+    Structured logging,
     Unit testing using Pytest
 
 API Endpoints
