@@ -1,9 +1,9 @@
 **System Health Check API**
-Overview
+**Overview**
 
 This project implements a Python-based FastAPI application that evaluates the health of a system composed of multiple interdependent components arranged as a Directed Acyclic Graph (DAG).
 
-The application:
+**The application:**
 
     Builds a DAG from input data
     Traverses the graph using Breadth First Search (BFS)
@@ -12,7 +12,7 @@ The application:
     Exposes REST APIs using FastAPI
     Provides Swagger/OpenAPI documentation
 
-Technologies Used
+**Technologies Used:**
     Python 3.x,
     FastAPI,
     Asyncio,
@@ -21,19 +21,19 @@ Technologies Used
     Terraform,
     GitHub Actions
 
-Core Features
+**Core Features:**
     DAG construction from JSON input, 
     Breadth First Search (BFS) traversal, 
     Asynchronous component health evaluation, 
     Health result aggregation, 
     FastAPI REST API
 
-Additional Features
+**Additional Features:**
     Swagger/OpenAPI documentation,
     Structured logging,
     Unit testing using Pytest
 
-API Endpoints
+**API Endpoints:**
     GET /
 
     Returns application status.
@@ -44,29 +44,29 @@ API Endpoints
     "message": "System Health Check API is running"
     }
 
-POST /health-check
+**POST /health-check:**
     Accepts component dependency information and returns component health results.
 
-Assumptions
+**Assumptions:**
     Input graph is a valid DAG.
     Component identifiers are unique.
     Health checks are independent.
     Health status is simulated for demonstration purposes.
 
-Design Decisions
-DAG Modeling
+**Design Decisions
+DAG Modeling**
 
     A Directed Acyclic Graph was chosen because system dependencies naturally form a dependency hierarchy.
 
-BFS Traversal
+**BFS Traversal**
 
     BFS was selected because it was explicitly required in the assignment and allows level-by-level traversal of dependent components.
 
-Async Health Checks
+**Async Health Checks**
 
     Async processing allows multiple component health checks to execute concurrently, improving scalability.
 
-FastAPI
+**FastAPI**
 
     FastAPI was chosen because it provides:
         High performance
@@ -75,10 +75,10 @@ FastAPI
         Async support
 
 
-Observability
+**Observability**
     The application includes basic observability features:
 
-Logging
+**Logging**
 
     Application events are logged using Python logging.
 
@@ -89,13 +89,13 @@ Logging
     Health check completed
 
 
-Health Endpoint
+**Health Endpoint**
     Root endpoint can be used as a simple service availability check.
 
-API Documentation
+**API Documentation**
     Swagger UI provides visibility into API contracts and request/response structures.
 
-Running Locally
+**Running Locally**
     Install Dependencies
         pip install fastapi uvicorn pytest
     Run Application
@@ -104,7 +104,7 @@ Running Locally
         python -m pytest
 
 
-API Documentation
+**API Documentation**
 
     After starting the application, open:
 
@@ -112,7 +112,7 @@ API Documentation
 
     Swagger UI allows testing endpoints directly from the browser.
 
-Sample Request
+**Sample Request**
         {
         "components": [
             {
@@ -130,7 +130,7 @@ Sample Request
         ]
         }
 
-Sample Response
+**Sample Response**
         {
         "bfs_order": [
             "Step1",
@@ -154,7 +154,7 @@ Sample Response
         ]
         }
 
-Testing
+**Testing**
 
     Unit tests are implemented using Pytest.
 
@@ -167,7 +167,7 @@ Testing
         python -m pytest
 
 
-Future Enhancements
+**Future Enhancements**
 
 The following features were considered but not implemented due to scope limitations:
 
@@ -177,17 +177,17 @@ The following features were considered but not implemented due to scope limitati
     Persistent storage for health results
     Advanced health evaluation logic
 
-Infrastructure as Code
+**Infrastructure as Code**
     Terraform configuration is included to demonstrate infrastructure provisioning and deployment automation.
 
-CI/CD
+**CI/CD**
 
 GitHub Actions workflow is included to:
     Install dependencies
     Execute unit tests
     Validate code before deployment
 
-AI Usage
+**AI Usage**
 
 AI assistance was used for:
     Solution design guidance
@@ -198,15 +198,15 @@ AI assistance was used for:
 
 All generated code was reviewed, tested, and validated before inclusion in the final solution.
 
-Tradeoffs
-Included
+**Tradeoffs**
+**Included**
     DAG construction
     BFS traversal
     Async processing
     API implementation
     Logging
     Unit testing
-Excluded
+**Excluded**
     Production-grade monitoring stack
     Persistent database storage
     Complex deployment infrastructure
